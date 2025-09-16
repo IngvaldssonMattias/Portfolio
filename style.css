@@ -1,0 +1,97 @@
+:root {
+  background-color: white;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #dcdacd;
+}
+
+h2,
+h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  border-style: groove;
+  border-width: 5px;
+  border-color: black;
+  text-decoration: underline;
+}
+
+header {
+  background-color: #f8f9fa;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #0077cc;
+}
+
+#img1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid gold;
+
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  object-fit: cover;
+}
+
+.button-style {
+  color: rgb(255, 255, 255);
+  background-color: rgb(224, 20, 20);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.button-style:not(:last-child) {
+  margin-right: 10px;
+}
+
+#CV,
+#PB,
+#EX {
+  font-style: italic;
+  color: black;
+  padding: 1px 10px;
+  text-decoration-color: black;
+  border-radius: 5px;
+  font-weight: lighter;
+}
+
+p {
+  font-style: italic;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #dcdacd
+ 
+}
