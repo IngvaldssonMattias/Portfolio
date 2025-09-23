@@ -1,97 +1,123 @@
-:root {
-  background-color: white;
-}
-
+/* Allmänt*/
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 20px;
-  background-color: #dcdacd;
-}
-
-h2,
-h3 {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  padding: 10px;
-  border-style: groove;
-  border-width: 5px;
-  border-color: black;
-  text-decoration: underline;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 header {
-  background-color: #f8f9fa;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: flex-end;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #1e1e2f;
+  padding: 1rem 2rem;
+  text-align: center;
 }
 
-nav ul {
+.nav-länkar {
   list-style: none;
-  margin: 0;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
   padding: 0;
+  margin: 0;
+}
+
+.nav-länkar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-länkar a:hover {
+  color: #00bcd4;
+}
+
+
+.intro-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Text hamnar på vänster sida*/
+.intro-text h1 {
+ font-size: 2.0 rem;
+  margin-bottom: 1em;
+  color: #1e1e2f;
+  
+}
+
+.intro-text p {
+ font-size: 2.0 rem;
+  line-height: 1.6;
+ 
+}
+.mid-text h2{
+   font-size: 2rem;
+  margin-bottom: 1em;
+  color: #1e1e2f;
+}
+.end-text h2{
+   font-size: 2rem;
+  margin-bottom: 1em;
+  color: #1e1e2f;
+}
+.mid-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+ 
+}
+.end-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+ 
+}
+/* får min bild mer till höger*/
+.profilbild-stor {
   display: flex;
-  gap: 20px;
+  justify-content: center;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-nav ul li a:hover {
-  color: #0077cc;
-}
-
-#img1 {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 5px solid gold;
-
-  position: absolute;
-  top: 60px;
-  right: 20px;
+.profilbild-stor img {
+  width: 300px;
+  height: 300px;
   object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #1e1e2f;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-.button-style {
-  color: rgb(255, 255, 255);
-  background-color: rgb(224, 20, 20);
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-.button-style:not(:last-child) {
-  margin-right: 10px;
-}
-
-#CV,
-#PB,
-#EX {
-  font-style: italic;
-  color: black;
-  padding: 1px 10px;
-  text-decoration-color: black;
-  border-radius: 5px;
-  font-weight: lighter;
-}
-
-p {
-  font-style: italic;
-}
 
 footer {
-  margin-top: 40px;
-  padding: 20px;
-  background-color: #dcdacd
- 
+  text-align: center;
+  padding: 1rem;
+  background-color: #1e1e2f;
+  color: white;
+  margin-top: 3rem;
+}
+
+/* Responsivt staplas bra på mindre skärmar */
+@media (max-width: 768px) {
+  .intro-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .intro-text {
+    text-align: center;
+  }
+
+  .profilbild-stor {
+    margin-top: 2rem;
+  }
+
+  .profilbild-stor img {
+    width: 200px;
+    height: 200px;
+  }
 }

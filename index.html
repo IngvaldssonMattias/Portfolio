@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="sv">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mattias Ingvaldsson Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Min Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
 
-  <body>
+  <header>
+    <nav>
+      <ul class="nav-länkar">
+        <li><a href="Länkar/CV.pdf"  target="_blank">CV</a></li>
+        <li><a href="Länkar/personligtbrev.pdf" target="_blank">Personligt brev</a></li>
+        <li><a href="Länkar/Examen.pdf" target="_blank">Examensbevis</a></li>
+        <li><a href="https://github.com/IngvaldssonMattias" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/mattias-ingvaldsson-197b20292/" target="_blank">LinkedIn</a></li>
+        <li><a href="mailto:mattias.ingvaldsson@chasacademy.se">Email</a></li>
+      </ul>
+    </nav>
+   
+  </header>
 
-    <main>
-      <a href="Länkar/CV.pdf" id="CV">CV</a>
-      <a href="Länkar/personligtbrev.pdf" id="PB">Personligt brev</a>
-      <a href="Länkar/Examen.pdf" id="EX">Examen</a>
-
-      <img src="Image/Mattias.jpg" alt="Bild" height="600px" id="img1" />
-
-      <h2>Vem är Mattias Ingvaldsson</h2>
-      <p>
-        Hej! Mitt namn är Mattias och är bosatt i Åby utanför Norrköping. Jag är
-        25 år gammal och har tidigare arbetat inom logistikbranchen.
+ <main class="intro-section">
+    <div class="intro-text">
+      <h1>Hej! Mitt namn är Mattias Ingvaldsson </h1>
+     <p>
+        Min fritid består mestadels av fiske och discgolf. Utöver detta så
+        spenderar jag min tid med mina vänner, familj och datorspelande.
       </p>
+    </div>
+    <div class="profilbild-stor">
+      <img src="Image/Mattias.jpg" alt="Mattias Ingvaldsson - Profilbild" />
+    </div>
 
-      <h2>Utbildning</h2>
+     <section class="mid-text">
+    <h2>Utbildning</h2>
       <p>
         På gymnasiet studerade jag el & energiprogrammet med inriktning dator-
         och kommunikationsteknik, där jag fick testa på att programmera i
@@ -31,7 +45,8 @@
         till utbildningen Fullstackutvecklare inom JavaScript på yrkeshögskolan
         Chas Academy i Linköping.
       </p>
-
+     </section>
+ <section class="mid-text">
       <h2>Tidigare erfarenhet</h2>
       <p>
         Efter gymnasiet arbetade jag inom logistikbranschen i cirka 5 år. Där
@@ -39,7 +54,10 @@
         inleveranshantering hos en kund. Där jag hade ansvar för hela
         inleveransflödet.
       </p>
-
+ </section>
+      
+     <section class="mid-text">
+      <h2>Intressen </h2>
       <p>
         Jag har alltid haft ett intresse för datorer och teknik, och har nu
         bestämt mig för att satsa på en karriär inom IT. Jag är väldigt
@@ -47,15 +65,10 @@
         färdigheter inom kodning och programmering. Och efter denna utbildning
         ska jag ut på arbetsmarknaden som Fullstackutvecklare.
       </p>
+     </section>
 
-      <p>
-        Min fritid består mestadels av fiske och discgolf. Utöver detta så
-        spenderar jag min tid med mina vänner, familjen och datorspelande.
-      </p>
-    </main>
-
-    <footer>
-      <h3>Framtiden</h3>
+      <section class="end-text">
+      <h2>Framtidsplaner</h2>
       <p>
         Efter min utbildning i Fullstackutvecklare JavaScript, så vill jag jobba
         med backend-utveckling. Det innebär att fokusera mer på att bygga och
@@ -65,7 +78,12 @@
         CI/CD och molntjänster. På sikt vill jag även arbeta med mer avancerade
         områden som microservices, serverless och systemarkitektur för att kunna
         utveckla skalbara och robusta lösningar.
-      </p>
-    </footer>
-  </body>
+        </p>
+      </section>
+    </main>
+  <footer>
+    <p>&copy; 2025 Mattias ingvaldsson – Portfolio</p>
+  </footer>
+
+</body>
 </html>
